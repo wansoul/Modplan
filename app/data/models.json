@@ -1,0 +1,20 @@
+[
+	{
+		"name" : "Blusa Peplum",
+		"id" : "b12cbc398729478cae42d44e37e0941c",
+		"description" : "Blusa Peplum - demonstração da montagem da blusa em um manequim.",
+		"moldImage" : "peplum-mold.jpg"
+	},
+	{
+		"name" : "Blusa Peplum",
+		"id" : "b12cbc398729478cae42d44e37e0941c",
+		"description" : "Blusa Peplum - demonstração da montagem da blusa em um manequim.",
+		"moldImage" : "peplum-mold.jpg"
+	},
+	{
+		"name" : "Camiseta",
+		"id" : "3f477e4908174127af63d6767d9bb141",
+		"description" : "Camiseta Regata - demonstração da montagem em um manequim.",
+		"moldImage" : "moldes.png"
+	}
+]
