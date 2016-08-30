@@ -25,11 +25,22 @@ module.exports = function (grunt) {
     dist: 'dist'
   };
 
+  //Enable Grunt gh-pages
+  grunt.loadNpmTasks('grunt-gh-pages');
+
   // Define the configuration for all the tasks
   grunt.initConfig({
 
     // Project settings
     yeoman: appConfig,
+
+    //Grunt gh-pages
+    'gh-pages': {
+      options: {
+        base: 'dist'
+      },
+      src: ['**']
+    },
 
     // Watches files for changes and runs tasks based on the changed files
     watch: {
