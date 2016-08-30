@@ -12,8 +12,9 @@ angular.module('modplanApp')
     $rootScope.currentPage = "main";
 
     $rootScope.models = [];
+    var modelsDataURL = "https://dl.dropboxusercontent.com/u/9451043/modplan/models.json";
 
-    $http.get("/data/models.json").then(function(response){
+    $http.get(modelsDataURL).then(function(response){
     			for(var i=0; i < response.data.length; i++){
     				$rootScope.models.push(response.data[i]);
     			}
