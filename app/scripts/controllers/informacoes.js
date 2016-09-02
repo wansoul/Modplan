@@ -9,9 +9,5 @@
  */
 angular.module('modplanApp')
   .controller('InformacoesCtrl', function () {
-    this.awesomeThings = [
-      'HTML5 Boilerplate',
-      'AngularJS',
-      'Karma'
-    ];
+  	$rootScope.currentPage = "model";
   });

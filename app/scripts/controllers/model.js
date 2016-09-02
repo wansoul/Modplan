@@ -8,11 +8,14 @@
  * Controller of the modplanApp
  */
 angular.module('modplanApp')
-  .controller('ModelCtrl', function ($rootScope, $scope, $routeParams) {
+  .controller('ModelCtrl', function ($rootScope, $scope, $routeParams, DataService) {
   	$rootScope.currentPage = "model";
 
-	$scope.modelId = $routeParams.id;
-
-	//$scope.currentModel = $rootScope.models[]
+	DataService.getModelsData()
+        .then(function(response){
+            $scope.model = response[$routeParams.id];
+        }, function(error){
+    		return error.data;	
+        });
 
   });

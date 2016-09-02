@@ -2,14 +2,13 @@
   <div class="row">
     <div class="col-md-12">
       <h1><a href="#/">Modelos</a> 
-      <img src="images/back-icon.png" class="back_icon">
-       Nome do Modelo</h1>
+      <img src="images/back-icon.png" class="back_icon">{{model.name}}</h1>
 
       <div class="row">
         <div class="col-md-7 ">
 
             <iframe width="100%" height="400" 
-            ng-src="{{'https://sketchfab.com/models/'+ modelId + '/embed?autostart=1&amp;preload=1' | as_trusted_url}}" 
+            ng-src="{{'https://sketchfab.com/models/'+ model.id + '/embed?autostart=1&amp;preload=1' | as_trusted_url}}" 
             frameborder="0" allowfullscreen mozallowfullscreen="true" webkitallowfullscreen="true" onmousewheel="">
             </iframe>
 
@@ -20,15 +19,16 @@
             <div class="col-md-12">
               <h2 class="moldes_title">Moldes</h2>
               <p>
-                <img src="images/moldes/moldes.png" width="100%">
+                <img src="{{model.moldImageURL}}" width="100%">
               </p>
             </div>
             <div class="col-md-12">
               <h2 class="legenda_title">Legenda</h2>
-              <dl>
-                <dt>01</dt><dd>Frente</dd>
-                <dt>02</dt><dd>Verso</dd>
-              </dl>
+              <table>
+                <tr ng-repeat="caption in model.captions" class="caption">
+                  <td>{{caption.id}}</td><td>{{caption.description}}</td>
+                </tr>
+              </table>
             </div>
           </div>
 

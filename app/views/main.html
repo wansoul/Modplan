@@ -4,8 +4,8 @@
       <h1>Modelos</h1>
       <div class="row">
         <div class="col-md-4 col-sm-6" ng-repeat="model in models">
-          <a href="{{'#model/' + model.id | as_trusted_url}}">
-            <div class="model_card">
+          <a href="{{'#model/' + $index | as_trusted_url}}">
+            <div class="model_card" style="background-image: url(images/moldes/{{model.moldImageURL}})">
               <h1>{{model.name}}</h1>
             </div>
           </a>
@@ -14,57 +14,3 @@
     </div>
   </div>
 </div>
-
-
-
-
-
-
-<!-- 
-
-<ul>
-      <li ng-repeat="model in models">
-        <h5><a href="{{'#model/' + model.id | as_trusted_url}}">{{model.name}}</a></h5>
-        <p>{{model.description}}</p>
-        <a href="{{'#model/' + model.id | as_trusted_url}}">
-          <img src="images/{{model.moldImage}}" width="30%">
-        </a>
-      </li>
-    </ul>
-
-
-      <div class="col-md-12">
-        <h3>Moldes</h3>
-        <p>
-          <img src="images/moldes.png" width="100%">
-        </p>
-      </div>
-      <div class="col-md-12">
-        <h3>Legenda</h3>
-        <dl>
-          <dt>01</dt><dd>Frente</dd>
-          <dt>02</dt><dd>Verso</dd>
-        </dl>
-      </div>
-       -->
-
-
-
-      <!-- 
-      <iframe width="100%" height="400" 
-      src="https://sketchfab.com/models/3f477e4908174127af63d6767d9bb141/embed?autostart=1&amp;preload=1" 
-      frameborder="0" allowfullscreen mozallowfullscreen="true" webkitallowfullscreen="true" onmousewheel=""></iframe>
-       -->
-
-<!-- 
-Camiseta
-3f477e4908174127af63d6767d9bb141
-Peplum
-b12cbc398729478cae42d44e37e0941c
- -->
-<!-- 
-       <iframe width="100%" height="400" 
-       src="https://sketchfab.com/models/b12cbc398729478cae42d44e37e0941c/embed?autostart=1&amp;preload=1" 
-       frameborder="0" allowfullscreen mozallowfullscreen="true" webkitallowfullscreen="true" onmousewheel="">
-       </iframe>
- -->

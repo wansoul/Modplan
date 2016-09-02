@@ -15,9 +15,11 @@ angular
     'ngResource',
     'ngRoute',
     'ngSanitize',
-    'ngTouch'
+    'ngTouch',
+    'angular-loading-bar'
   ])
-  .config(function ($routeProvider) {
+  .config(function ($routeProvider, cfpLoadingBarProvider) {
+    cfpLoadingBarProvider.parentSelector = '#loading_bar_container';
     $routeProvider
       .when('/', {
         templateUrl: 'views/main.html',

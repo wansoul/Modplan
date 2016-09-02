@@ -30,18 +30,21 @@
       <h1>
         Objeto de Aprendizagem para auxiliar alunos de Moda e Vestuário na percepção tridimensional do encaixe de moldes bidimensionais
       </h1>
+      <a href="#/" ng-hide="currentPage == 'main' "><img src="images/back-icon-white.png" class="back_icon_white"></a>
       <a href="#informacoes"><img src="images/info-icon.png" class="info_icon"></a>
     </div>
 
+    <div id="loading_bar_container"></div>
+
     <div class="container-fluid">
-    <div ng-view=""></div>
+      <div ng-view=""></div>
     </div>
 
     <div class="footer">
       <div class="container-fluid">
         <div class="row">
           <div class="col-xs-8 col-sm-8 col-md-8">
-            <p>MODPLAN - Objeto de Aprendizagem</p>
+            <p>MODPLAN</p>
           </div>
           <div class="col-xs-4 col-sm-4 col-md-4 right_aligned">
             <p><a href="#informacoes">Informações</a></p>
@@ -80,9 +83,9 @@
         <!-- build:js({.tmp,app}) scripts/scripts.js -->
         <script src="scripts/app.js"></script>
         <script src="scripts/controllers/main.js"></script>
-        <script src="scripts/controllers/about.js"></script>
         <script src="scripts/controllers/model.js"></script>
         <script src="scripts/controllers/informacoes.js"></script>
+        <script src="scripts/services/dataservice.js"></script>
         <!-- endbuild -->
 </body>
 </html>

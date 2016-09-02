@@ -3,18 +3,48 @@
 		"name" : "Blusa Peplum",
 		"id" : "b12cbc398729478cae42d44e37e0941c",
 		"description" : "Blusa Peplum - demonstração da montagem da blusa em um manequim.",
-		"moldImage" : "peplum-mold.jpg"
+		"moldImageURL" : "peplum-mold.jpg",
+		"captions" : [
+			{
+				"id": "01",
+				"description": "Frente"
+			 },
+			 {
+				"id": "02",
+				"description": "Verso"
+			 }
+		]
 	},
 	{
-		"name" : "Blusa Peplum",
-		"id" : "b12cbc398729478cae42d44e37e0941c",
+		"name" : "Casa LowPoly",
+		"id" : "56502a3dd0674513b948ddcc0e6872e7",
 		"description" : "Blusa Peplum - demonstração da montagem da blusa em um manequim.",
-		"moldImage" : "peplum-mold.jpg"
+		"moldImageURL" : "default-image.svg",
+		"captions" : [
+			{
+				"id": "01",
+				"description": "Frente"
+			 },
+			 {
+				"id": "02",
+				"description": "Verso"
+			 }
+		]
 	},
 	{
 		"name" : "Camiseta",
 		"id" : "3f477e4908174127af63d6767d9bb141",
 		"description" : "Camiseta Regata - demonstração da montagem em um manequim.",
-		"moldImage" : "moldes.png"
+		"moldImageURL" : "moldes.png",
+		"captions" : [
+			{
+				"id": "01",
+				"description": "Frente"
+			 },
+			 {
+				"id": "02",
+				"description": "Verso"
+			 }
+		]
 	}
 ]
