@@ -10,8 +10,9 @@
 angular.module('modplanApp')
 .service('DataService', function ($http) {
 
-	var modelsDataURL = "https://dl.dropboxusercontent.com/u/9451043/modplan/models.json";
 	//var modelsDataURL = "data/models.json";
+	//var modelsDataURL = "https://dl.dropboxusercontent.com/u/9451043/modplan/models.json";
+  var modelsDataURL = "https://www.dropbox.com/s/360py5uhqy6jjpg/models.json?dl=1";
 
     return {
     	getModelsData: function(){
